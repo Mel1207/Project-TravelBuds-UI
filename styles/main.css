@@ -75,6 +75,50 @@ button, .button {
   box-shadow: none;
 }
 
+.menu-overlay {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.menu-overlay .close {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.menu-overlay .close img {
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin-left: auto;
+}
+.menu-overlay .menu-container {
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  margin-left: auto;
+  padding: 20px;
+}
+.menu-overlay .menu-container ul {
+  list-style: none;
+}
+.menu-overlay .menu-container ul li {
+  margin-bottom: 10px;
+}
+.menu-overlay .menu-container ul a {
+  color: #3A3A3A;
+  font-size: 18px;
+}
+
+.open-menu {
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
   .navbar .navbar-container .nav-links, .navbar .navbar-container button {
     display: none;
@@ -91,6 +135,17 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background: white;
+}
+
+main {
+  background: white;
+  padding-top: 100px;
 }
 
 .container {
@@ -152,7 +207,7 @@ header:before {
 }
 
 .section-1 {
-  margin: 130px 0;
+  margin-bottom: 130px;
   width: 100%;
 }
 .section-1 .d-flex {
@@ -332,12 +387,54 @@ footer .footer-bottom p {
 }
 
 @media screen and (max-width: 900px) {
+  header h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  header br {
+    display: none;
+  }
+
   .section-2 .gallery {
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (max-width: 800px) {
+  .section-1 .d-flex {
+    flex-direction: column;
+  }
+  .section-1 .d-flex img {
+    display: none;
+  }
+
+  .section-3 .email-alert {
+    padding: 0 20px;
+  }
+  .section-3 .email-alert .form-group input {
+    padding: 0 20px;
+  }
+  .section-3 .email-alert .form-group button {
+    transform: translateX(0);
+  }
+  .section-3 br {
+    display: none;
+  }
+
+  footer .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
 @media screen and (max-width: 550px) {
+  .section-1 .d-flex {
+    flex-direction: column;
+  }
+  .section-1 .d-flex img {
+    display: none;
+  }
+
   .section-2 .gallery {
     grid-template-columns: 1fr;
   }

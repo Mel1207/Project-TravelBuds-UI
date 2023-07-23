@@ -8,15 +8,15 @@
 </head>
 <body>
   <!-- HEADER -->
-  <header>
+  <header id="header">
     <nav class="navbar">
       <div class="navbar-container">
         <a href="#!" class="nav-logo">TravelBUDS</a>
         <ul class="nav-links">
-          <li><a href="#!">Home</a></li>
-          <li><a href="#!">Destination</a></li>
-          <li><a href="#!">Blogs</a></li>
-          <li><a href="#!">Contacts</a></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#section-1">About</a></li>
+          <li><a href="#section-2">Destination</a></li>
+          <li><a href="#footer">Contacts</a></li>
         </ul>
         <button class="button btn-small">Sign up</button>
         <div class="icon-hamburger">
@@ -34,10 +34,26 @@
     </div>
   </header>
 
+  <!-- MENU MOBILE -->
+  <div class="menu-overlay">
+    <div class="menu-container">
+      <div class="close">
+        <img src="./img/icon-close.svg" alt="close">
+      </div>
+
+      <ul>
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!">Destination</a></li>
+        <li><a href="#!">Blogs</a></li>
+        <li><a href="#!">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
   <!-- MAIN CONTENT -->
   <main>
     <!-- SECTION 1 -->
-    <section class="section-1">
+    <section class="section-1" id="section-1">
       <div class="container d-flex">
         <div class="left-col">
           <h2>Explore and Create Memories with TravelBUDS</h2>
@@ -48,7 +64,7 @@
       </div>
     </section>
     <!-- SECTION 2 -->
-    <section class="section-2">
+    <section class="section-2" id="section-2">
       <div class="container">
         <h2>Our Best Destinations</h2>
         <div class="gallery">
@@ -81,7 +97,7 @@
       </div>
     </section>
     <!-- SECTION 3 -->
-    <section class="section-3">
+    <section class="section-3" id="section-3">
       <div class="container">
         <div class="email-alert">
           <div class="email-details">
@@ -100,7 +116,7 @@
   </main>
 
   <!-- FOOTER -->
-  <footer>
+  <footer id="footer">
     <div class="container">
       <div class="footer-top">
         <ul class="footer-links">

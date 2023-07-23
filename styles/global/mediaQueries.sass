@@ -1,11 +1,52 @@
 @media screen and (max-width: 900px) 
+  header 
+    h1 
+      font-size: 40px
+      line-height: 60px 
+
+    br 
+      display: none
+
   .section-2 
     .gallery 
       gap: 20px
       grid-template-columns: repeat(2, 1fr)
 
+@media screen and (max-width: 800px) 
+  .section-1 
+    .d-flex 
+      flex-direction: column
+
+      img 
+        display: none
+
+  .section-3 
+    .email-alert
+      padding: 0 20px 
+
+      .form-group 
+        input 
+          padding: 0 20px
+
+        button 
+          transform: translateX(0)
+
+    br 
+      display: none
+
+  footer 
+    .footer-top 
+      flex-direction: column
+      align-items: center
+      gap: 30px
 
 @media screen and (max-width: 550px) 
+  .section-1 
+    .d-flex 
+      flex-direction: column
+
+      img 
+        display: none
   .section-2 
     .gallery 
       grid-template-columns: 1fr
