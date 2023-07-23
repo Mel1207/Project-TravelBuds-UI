@@ -1,0 +1,78 @@
+*, html 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  // outline: 1px solid red
+
+.container 
+  max-width: 1180px
+  width: 100%
+  margin: 0 auto
+  padding: 0 15px
+
+a 
+  text-decoration: none
+
+p 
+  line-height: 26px
+  font-size: $p-regular
+
+header 
+  position: relative
+  height: 100vh
+  width: 100%
+  display: flex
+  align-items: center
+  background: url('../../img/bg-header.png')
+  background-repeat: no-repeat
+  background-size: cover
+
+  h1 
+    position: relative
+    font-size: $heading-primary
+    color: $cWhite
+    font-weight: 600
+    line-height: 68px
+    margin-bottom: 14px
+
+  p 
+    position: relative
+    color: $cWhite 
+    margin-bottom: 36px
+
+  button 
+    position: relative
+
+header:before 
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  height: 100%
+  width: 100%
+  content: ''
+  background: $cBlack
+  opacity: 0.3
+
+.section-1 
+  margin: 130px 0
+  width: 100%
+
+  .d-flex 
+    display: flex
+    gap: 60px
+    align-items: center
+
+  .left-col 
+    h2 
+      font-size: $heading-secondary
+      margin-bottom: 21px
+
+    p 
+      margin-bottom: 35px
+
+  img 
+    width: 50%
+    height: auto
+    box-shadow: 12px 15px 20px 0px rgba(0, 0, 0, 0.15)
