@@ -190,6 +190,8 @@ header:before {
 .section-2 .gallery .img-card {
   height: 370px;
   position: relative;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 .section-2 .gallery .img-card .img-card-text {
   position: absolute;
@@ -226,7 +228,63 @@ header:before {
 }
 
 .section-3 {
-  background: red;
+  position: relative;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.section-3 .email-alert {
+  position: relative;
+  background: url("../../../img/email.png");
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
+.section-3 .email-alert:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(68deg, #100F29 0%, rgba(16, 15, 41, 0.79) 33.97%, rgba(16, 15, 41, 0) 100%);
+}
+.section-3 .email-details {
+  position: relative;
+}
+.section-3 .email-details h3, .section-3 .email-details p {
+  color: #fff;
+}
+.section-3 .email-details h3 {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.section-3 .email-details h3 span {
+  font-size: 35px;
+}
+.section-3 .email-details p {
+  margin-bottom: 30px;
+}
+.section-3 .email-details .form-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.section-3 .email-details .form-group input {
+  width: 100%;
+  height: 50px;
+  padding: 0 180px 0 20px;
+  outline: none;
+  border: none;
+}
+.section-3 .email-details .form-group button {
+  transform: translateX(-100%);
+  width: 160px;
+  height: 50px;
+  box-shadow: none;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 900px) {
