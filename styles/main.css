@@ -7,6 +7,7 @@ button, .button {
   font-weight: 600;
   font-family: "Inter", sans-serif;
   cursor: pointer;
+  box-shadow: 4px 4px 10px 0px rgba(255, 157, 10, 0.25);
 }
 
 .btn-small {
@@ -41,21 +42,21 @@ button, .button {
   margin: 0 auto;
   padding: 0 15px;
 }
-.navbar .navbar-container .nav-logo {
+.navbar .nav-logo {
   font-size: 25px;
   color: #fff;
   font-weight: 600;
 }
-.navbar .navbar-container .nav-links {
+.navbar .nav-links {
   list-style: none;
   display: flex;
   gap: 32px;
 }
-.navbar .navbar-container .nav-links a {
+.navbar .nav-links a {
   color: #fff;
   font-size: 16px;
 }
-.navbar .navbar-container .icon-hamburger {
+.navbar .icon-hamburger {
   display: none;
   height: 22px;
   width: 30px;
@@ -65,10 +66,13 @@ button, .button {
   cursor: pointer;
   padding: 3px;
 }
-.navbar .navbar-container .icon-hamburger div {
+.navbar .icon-hamburger div {
   height: 2px;
   width: 100%;
   background: #fff;
+}
+.navbar button {
+  box-shadow: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -113,6 +117,7 @@ header {
   align-items: center;
   background: url("../../img/bg-header.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 header h1 {
@@ -130,6 +135,7 @@ header p {
 }
 header button {
   position: relative;
+  box-shadow: none;
 }
 
 header:before {
@@ -165,6 +171,74 @@ header:before {
   width: 50%;
   height: auto;
   box-shadow: 12px 15px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.section-2 {
+  margin-bottom: 100px;
+}
+.section-2 h2 {
+  margin-bottom: 50px;
+}
+.section-2 .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.section-2 .gallery .img-card {
+  height: 370px;
+  position: relative;
+}
+.section-2 .gallery .img-card .img-card-text {
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px 30px 20px;
+  color: #fff;
+}
+.section-2 .gallery .img-card:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(35, 35, 35, 0) 59.71%, rgba(0, 0, 0, 0.8) 100%);
+}
+.section-2 .gallery .img-card1 {
+  background: url("../../../img/gallery1.png");
+}
+.section-2 .gallery .img-card2 {
+  background: url("../../../img/gallery2.png");
+}
+.section-2 .gallery .img-card3 {
+  background: url("../../../img/gallery3.png");
+}
+.section-2 .gallery .img-card4 {
+  background: url("../../../img/gallery4.png");
+}
+.section-2 button {
+  margin: 0 auto;
+  display: block;
+}
+
+.section-3 {
+  background: red;
+}
+
+@media screen and (max-width: 900px) {
+  .section-2 .gallery {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 550px) {
+  .section-2 .gallery {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
