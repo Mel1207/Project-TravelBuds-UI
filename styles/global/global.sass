@@ -172,21 +172,65 @@ header:before
       margin-bottom: 30px
 
 
-    .form-group 
-      width: 100% 
+  .form-group 
+    width: 100% 
+    display: flex
+    align-items: center
+
+    input 
+      width: 100%
+      height: 50px
+      padding: 0 180px 0 20px
+      outline: none
+      border: none
+
+    button 
+      transform: translateX(-100%)
+      width: 160px
+      height: 50px
+      box-shadow: none
+      font-weight: 300
+
+footer 
+  height: 275px
+  display: flex 
+  align-items: center
+  background: $cGray
+
+  .footer-top 
+    display: flex
+    justify-content: space-between
+    padding-bottom: 35px
+    border-bottom: 1px solid rgba($cWhite, .1)
+    margin-bottom: 30px
+
+    .footer-links, .footer-icons 
       display: flex
-      align-items: center
+      list-style: none
 
-      input 
-        width: 100%
-        height: 50px
-        padding: 0 180px 0 20px
-        outline: none
-        border: none
+    .footer-links 
+      gap: 45px
+      
+      a 
+        color: $cWhite
 
-      button 
-        transform: translateX(-100%)
-        width: 160px
-        height: 50px
-        box-shadow: none
-        font-weight: 300
+    .footer-icons 
+      gap: 25px
+
+  .footer-bottom 
+    .privacy-links 
+      display: flex 
+      list-style: none 
+      gap: 15px 
+      justify-content: center
+      margin-bottom: 15px
+
+      a 
+        color: rgba($cWhite, .5)
+        font-weight: 600
+        font-size: 12px
+
+    p 
+      text-align: center
+      color: rgba($cWhite, .5)
+      font-size: 12px
