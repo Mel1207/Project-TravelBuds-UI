@@ -1,5 +1,5 @@
 .navbar 
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   right: 0
@@ -7,6 +7,8 @@
   width: 100%
   display: flex
   align-items: center
+  transition: all 0.2s
+  z-index: 10
 
   .navbar-container 
     display: flex
@@ -50,7 +52,7 @@
   
 .menu-overlay 
   display: none
-  position: absolute
+  position: fixed
   height: 100vh
   width: 100%
   top: 0
@@ -58,6 +60,7 @@
   right: 0
   bottom: 0
   background: rgba($cBlack, .7)
+  z-index: 100
 
   .close 
     display: block
@@ -89,6 +92,20 @@
 
 .open-menu 
   display: block
+
+.is-scroll 
+  background: $cWhite
+
+  .nav-logo 
+    color: $cBlack
+
+  .icon-hamburger 
+    div 
+      background: $cBlack
+
+  .nav-links 
+    a 
+      color: $cBlack
 
 @media screen and (max-width: 768px) 
   .navbar 
